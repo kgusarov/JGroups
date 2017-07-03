@@ -138,7 +138,7 @@ public class Slf4jLogImpl implements Log {
     @Override
     public void debug(final String msg, final Object... args) {
         final String formatted = String.format(locale, msg, args);
-        logger.info(formatted);
+        logger.debug(formatted);
     }
 
     @Override
@@ -159,7 +159,7 @@ public class Slf4jLogImpl implements Log {
     @Override
     public void trace(final String msg, final Object... args) {
         final String formatted = String.format(locale, msg, args);
-        logger.info(formatted);
+        logger.trace(formatted);
     }
 
     @Override
